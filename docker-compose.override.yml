@@ -1,0 +1,17 @@
+services:
+  app:
+    command: sh -lc "npm install --no-audit --no-fund && npm run dev"
+    environment:
+      - NODE_ENV=development
+      - DB_HOST=mysql
+      - DB_PORT=3306
+      - DB_USER=root
+      - DB_PASSWORD=rootpassword
+      - DB_NAME=authdb
+      - JWT_SECRET=your-super-secret-jwt-key-change-in-production
+    volumes:
+      - ./:/app:delegated
+    ports:
+      - "3000:3000"
+    depends_on:
+      - mysql

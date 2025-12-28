@@ -83,7 +83,7 @@ export default function DashboardPage() {
             </div>
 
             <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-2">
-              Welcome back{user?.name ? `, ${user.name}` : ''}!
+              Welcome backs{user?.name ? `, ${user.name}` : ''}!
             </h2>
             <p className="text-gray-600 dark:text-gray-400 mb-8">
               You are logged in as {user?.email}
