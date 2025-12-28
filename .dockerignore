@@ -1,0 +1,30 @@
+# Dependency directories
+node_modules
+npm-debug.log
+
+# Next.js build output
+.next
+out
+
+# Environment files
+.env*
+!.env.example
+
+# Docker
+.docker
+
+# IDE
+.idea
+.vscode
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Git
+.git
+.gitignore
+
+# Misc
+*.md
+*.log
